@@ -1,0 +1,84 @@
+/* BIET Branding Colors */
+:root {
+    --biet-maroon: #800000;
+    --biet-gold: #FFD700;
+    --white: #ffffff;
+    --light-gray: #f4f4f9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border-top: 8px solid var(--biet-maroon);
+}
+
+h1 {
+    color: var(--biet-maroon);
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+h2 {
+    color: #555;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.subject-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+
+button {
+    background-color: var(--biet-maroon);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a00000;
+}
+
+#result {
+    margin-top: 25px;
+    color: var(--biet-maroon);
+    font-size: 22px;
+}
+
+#percentage {
+    color: #666;
+    font-weight: bold;
+}
