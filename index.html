@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>BIET CGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>BIET Davangere</h1>
-        <h2>VTU CGPA Calculator</h2>
-        <div id="subject-list">
-            <div class="subject-row">
-                <input type="number" class="credit" placeholder="Credits (e.g. 4)">
-                <select class="grade">
-                    <option value="10">O (10)</option>
-                    <option value="9">S (9)</option>
-                    <option value="8">A (8)</option>
-                    <option value="7">B (7)</option>
-                    <option value="0">F (0)</option>
-                </select>
-            </div>
-        </div>
-        <button onclick="calculateCGPA()">Calculate Now</button>
-        <h3 id="result">Your SGPA: 0.00</h3>
-        <p id="percentage">Percentage: 0%</p>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="selection-box">
+    <label>VTU Scheme:</label>
+    <select id="scheme-select" onchange="loadSubjects()">
+        <option value="2025">2024/2025 (Vision)</option>
+        <option value="2022">2022 (CBCS)</option>
+    </select>
+
+    <label>Semester:</label>
+    <select id="sem-select" onchange="loadSubjects()">
+        <option value="">--Select--</option>
+        <option value="1">1st Sem</option>
+        <option value="2">2nd Sem</option>
+        <option value="3">3rd Sem</option>
+        <option value="4">4th Sem</option>
+        <option value="5">5th Sem</option>
+        <option value="6">6th Sem</option>
+        <option value="7">7th Sem</option>
+        <option value="8">8th Sem</option>
+    </select>
+</div>
+<div id="subject-container"></div>
+<button onclick="calculateNow()">Calculate Result</button>
+<h2 id="result"></h2>
+<p id="percentage"></p>
