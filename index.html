@@ -1,24 +1,45 @@
-<div class="selection-box">
-    <label>VTU Scheme:</label>
-    <select id="scheme-select" onchange="loadSubjects()">
-        <option value="2025">2024/2025 (Vision)</option>
-        <option value="2022">2022 (CBCS)</option>
-    </select>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIET CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- THIS LINKS THE COLOR -->
+</head>
+<body>
+    <div class="container">
+        <h1>BIET Davangere</h1>
+        <h2>VTU CGPA Calculator</h2>
+        
+        <div class="selection-box">
+            <label>VTU Scheme:</label>
+            <select id="scheme-select" onchange="loadSubjects()">
+                <option value="2025">2024/2025 (Vision)</option>
+                <option value="2022">2022 (CBCS)</option>
+            </select>
 
-    <label>Semester:</label>
-    <select id="sem-select" onchange="loadSubjects()">
-        <option value="">--Select--</option>
-        <option value="1">1st Sem</option>
-        <option value="2">2nd Sem</option>
-        <option value="3">3rd Sem</option>
-        <option value="4">4th Sem</option>
-        <option value="5">5th Sem</option>
-        <option value="6">6th Sem</option>
-        <option value="7">7th Sem</option>
-        <option value="8">8th Sem</option>
-    </select>
-</div>
-<div id="subject-container"></div>
-<button onclick="calculateNow()">Calculate Result</button>
-<h2 id="result"></h2>
-<p id="percentage"></p>
+            <label>Semester:</label>
+            <select id="sem-select" onchange="loadSubjects()">
+                <option value="">--Select--</option>
+                <option value="1">1st Sem</option>
+                <option value="2">2nd Sem</option>
+                <option value="3">3rd Sem</option>
+                <option value="4">4th Sem</option>
+                <option value="5">5th Sem</option>
+                <option value="6">6th Sem</option>
+                <option value="7">7th Sem</option>
+                <option value="8">8th Sem</option>
+            </select>
+        </div>
+
+        <div id="subject-container"></div>
+
+        <button onclick="calculateNow()">Calculate Result</button>
+
+        <h2 id="result"></h2>
+        <p id="percentage"></p>
+    </div>
+
+    <script src="script.js"></script> <!-- THIS LINKS THE MATH -->
+</body>
+</html>
